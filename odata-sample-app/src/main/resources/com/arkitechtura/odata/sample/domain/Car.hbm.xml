@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.arkitechtura.odata.sample.domain">
+    <class name="Car" table="Car">
+        <id name="id" column="carId">
+            <generator class="native"/>
+        </id>
+        <property name="model" type="string" column="model"/>
+        <property name="currency" type="string" column="currency"/>
+        <property name="price" type="float" column="price"/>
+        <property name="modelYear" type="string" column="modelYear"/>
+        <property name="updated" type="date" column="updated"/>
+        <property name="imagePath" type="string" column="imagePath"/>
+        <many-to-one name="manufacturer" column="manufacturerId" not-null="true"/>
+    </class>
+</hibernate-mapping>

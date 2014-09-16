@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3109422739">
+    <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="c64c77cb-205f-4621-b4a2-3c1b477feaa0">
+      <driver-ref>hsqldb.remote</driver-ref>
+      <jdbc-driver>org.hsqldb.jdbcDriver</jdbc-driver>
+      <jdbc-url>jdbc:hsqldb:file:C:\Personal\gitrepos\arkitechtura\consulting\odata-sample-app\src\main\resources\db\cardb</jdbc-url>
+      <user-name>sa</user-name>
+      <libraries>
+        <library>
+          <url>file://C:\Users\equiros.SEARCH\.m2\repository\hsqldb\hsqldb\1.8.0.7\hsqldb-1.8.0.7.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="com.arkitechtura.odata.sample:hibernate.cfg.xml" uuid="b157c0f5-c3e1-4925-ac13-a5444422e744">
+      <driver-ref>hsqldb.remote</driver-ref>
+      <jdbc-driver>org.hsqldb.jdbcDriver</jdbc-driver>
+      <jdbc-url>jdbc:hsqldb:file:cardb</jdbc-url>
+      <user-name>sa</user-name>
+      <libraries>
+        <library>
+          <url>file://C:\Users\equiros.SEARCH\.m2\repository\hsqldb\hsqldb\1.8.0.7\hsqldb-1.8.0.7.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="com:arkitechtura:odata:sample:hibernate.cfg.xml" uuid="d8b2ea29-568c-4625-a7b7-12f9aa53c9df">
+      <driver-ref>hsqldb.remote</driver-ref>
+      <jdbc-driver>org.hsqldb.jdbcDriver</jdbc-driver>
+      <jdbc-url>jdbc:hsqldb:file:C:\Personal\gitrepos\arkitechtura\consulting\odata-sample-app\src\main\resources\db\cardb</jdbc-url>
+      <user-name>sa</user-name>
+      <libraries>
+        <library>
+          <url>file://C:\Users\equiros.SEARCH\.m2\repository\hsqldb\hsqldb\1.8.0.7\hsqldb-1.8.0.7.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+
