@@ -27,6 +27,6 @@
     </build>
     <modules>
         <module>../emissarius-core</module>
-        <module>../emissarius-core-ipojo</module>
+        <module>../emissarius-distribution-archetype</module>
     </modules>
 </project>

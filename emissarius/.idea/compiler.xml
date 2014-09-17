@@ -23,11 +23,13 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="emissarius-core" />
+        <module name="emissarius-distribution-archetype" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="emissarius-core" target="1.7" />
       <module name="emissarius-core-ipojo" target="1.7" />
+      <module name="emissarius-distribution-archetype" target="1.7" />
       <module name="emissarius-super" target="1.7" />
     </bytecodeTargetLevel>
   </component>

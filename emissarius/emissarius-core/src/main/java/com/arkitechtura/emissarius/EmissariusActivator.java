@@ -23,14 +23,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Component
-public class Activator implements BundleActivator {
-  private static Logger logger = LoggerFactory.getLogger(Activator.class);
+public class EmissariusActivator implements BundleActivator {
+  private static Logger logger = LoggerFactory.getLogger(EmissariusActivator.class);
 
   public void start(BundleContext context) {
-    logger.info("Starting Emissarius Activator");
+    logger.info("Starting Emissarius EmissariusActivator");
   }
 
   public void stop(BundleContext context) {
-    logger.info("Stopping Emissarius Activator");
+    logger.info("Stopping Emissarius EmissariusActivator");
   }
 }

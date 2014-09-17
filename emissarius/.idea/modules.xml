@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/emissarius-core/emissarius-core.iml" filepath="$PROJECT_DIR$/emissarius-core/emissarius-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emissarius-distribution-archetype/emissarius-distribution-archetype.iml" filepath="$PROJECT_DIR$/emissarius-distribution-archetype/emissarius-distribution-archetype.iml" />
       <module fileurl="file://$PROJECT_DIR$/emissarius-super/emissarius-super.iml" filepath="$PROJECT_DIR$/emissarius-super/emissarius-super.iml" />
     </modules>
   </component>
