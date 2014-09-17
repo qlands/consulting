@@ -34,8 +34,8 @@ public class SampleEdmProvider extends EdmProvider {
 
   @Override
   public EntityContainerInfo getEntityContainerInfo(String name) throws ODataException {
-    if (name == null || "ODataCarsEntityContainer".equals(name)) {
-      return new EntityContainerInfo().setName("CarSampleEntityContainer").setDefaultEntityContainer(true);
+    if (name == null || ENTITY_CONTAINER.equals(name)) {
+      return new EntityContainerInfo().setName(ENTITY_CONTAINER).setDefaultEntityContainer(true);
     }
 
     return null;
