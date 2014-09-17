@@ -1,5 +1,6 @@
 package com.arkitechtura.odata.sample.domain;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import java.util.Date;
 import java.util.Set;
@@ -31,6 +32,7 @@ public class Manufacturer {
     this.name = name;
   }
 
+  @Embedded
   public Address getAddress() {
     return address;
   }

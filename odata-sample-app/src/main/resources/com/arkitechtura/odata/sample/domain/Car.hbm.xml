@@ -13,6 +13,6 @@
         <property name="modelYear" type="string" column="modelYear"/>
         <property name="updated" type="date" column="updated"/>
         <property name="imagePath" type="string" column="imagePath"/>
-        <many-to-one name="manufacturer" column="manufacturerId" not-null="true"/>
+        <many-to-one name="manufacturer" column="manufacturerId" not-null="true" lazy="false"/>
     </class>
 </hibernate-mapping>

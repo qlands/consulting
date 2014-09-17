@@ -13,4 +13,5 @@ public interface ISampleDataStore {
   public Map<String, Object> getManufacturer(long id) throws ODataNotFoundException;
   public List<Map<String,Object>> getCars() throws ODataNotFoundException;
   public List<Map<String,Object>> getManufacturers() throws ODataNotFoundException;
+  public Map<String, Object> getManufacturerForCar(long id) throws ODataNotFoundException;
 }

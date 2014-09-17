@@ -57,8 +57,8 @@ public class SampleSingleProcessor extends ODataSingleProcessor {
       }
       else if (ENTITY_SET_NAME_MANUFACTURERS.equals(entitySet.getName())) {
         int id = getKeyValue(uriInfo.getKeyPredicates().get(0));
-        Map<String, Object> data = dataStore.getManufacturer(id);
-
+        Map<String, Object> data = null;
+        data = dataStore.getManufacturer(id);
         if (data != null) {
           URI serviceRoot = getContext().getPathInfo().getServiceRoot();
           EntityProviderWriteProperties.ODataEntityProviderPropertiesBuilder propertiesBuilder = EntityProviderWriteProperties.serviceRoot(serviceRoot);
@@ -75,9 +75,8 @@ public class SampleSingleProcessor extends ODataSingleProcessor {
       EdmEntitySet entitySet = uriInfo.getTargetEntitySet();
       if (ENTITY_SET_NAME_MANUFACTURERS.equals(entitySet.getName())) {
         int carKey = getKeyValue(uriInfo.getKeyPredicates().get(0));
-        return EntityProvider.writeEntry(contentType, uriInfo.getTargetEntitySet(), dataStore.getManufacturer(carKey), EntityProviderWriteProperties.serviceRoot(getContext().getPathInfo().getServiceRoot()).build());
+        return EntityProvider.writeEntry(contentType, uriInfo.getTargetEntitySet(), dataStore.getManufacturerForCar(carKey), EntityProviderWriteProperties.serviceRoot(getContext().getPathInfo().getServiceRoot()).build());
       }
-
       throw new ODataNotFoundException(ODataNotFoundException.ENTITY);
     }
     throw new ODataNotImplementedException();

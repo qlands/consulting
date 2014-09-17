@@ -8,9 +8,14 @@
             <generator class="native"/>
         </id>
         <property name="name" type="string" column="name"/>
-        <component name="address"/>
+        <component name="address" class="com.arkitechtura.odata.sample.domain.Address">
+            <property name="city" type="string" column="city"/>
+            <property name="street" type="string" column="street"/>
+            <property name="zipCode" type="string" column="zipcode"/>
+            <property name="country" type="string" column="country"/>
+        </component>
         <property name="updated" type="date" column="updated"/>
-        <set name="cars" inverse="true">
+        <set name="cars" inverse="true" lazy="false">
             <key column="manufacturerId"/>
             <one-to-many class="Car"/>
         </set>
