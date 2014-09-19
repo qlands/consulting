@@ -1,4 +1,6 @@
-CREATE TABLE Manufacturer (
+CREATE DATABASE IF NOT EXISTS ODATA_SAMPLE;
+USE ODATA_SAMPLE;
+CREATE TABLE IF NOT EXISTS Manufacturer (
 	manufacturerId BIGINT NOT NULL PRIMARY KEY,
 	name VARCHAR(100),
 	street VARCHAR(100),
@@ -8,7 +10,7 @@ CREATE TABLE Manufacturer (
 	updated DATE
 );
 
-CREATE TABLE Car (
+CREATE TABLE IF NOT EXISTS Car (
 	carId BIGINT NOT NULL PRIMARY KEY,
 	model VARCHAR(100),
 	currency VARCHAR(100),
@@ -20,16 +22,16 @@ CREATE TABLE Car (
 	FOREIGN KEY (manufacturerId) REFERENCES Manufacturer (manufacturerId)
 );
 
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
   user_name VARCHAR(20) NOT NULL PRIMARY KEY,
   user_pass VARCHAR(20) NOT NULL
 );
 
-CREATE TABLE roles (
+CREATE TABLE IF NOT EXISTS roles (
   role_name VARCHAR(20) NOT NULL PRIMARY KEY
 );
 
-CREATE TABLE user_roles(
+CREATE TABLE IF NOT EXISTS user_roles(
   user_name VARCHAR(20) NOT NULL,
   role_name VARCHAR(20) NOT NULL,
   PRIMARY KEY (user_name, role_name)
