@@ -101,7 +101,7 @@ public class SampleEdmProvider extends EdmProvider {
 
         return new EntityType().setName(ENTITY_TYPE_1_2.getName())
                 .setProperties(properties)
-                .setHasStream(true)
+                //.setHasStream(true)
                 .setKey(key)
                 .setNavigationProperties(navigationProperties);
       }
