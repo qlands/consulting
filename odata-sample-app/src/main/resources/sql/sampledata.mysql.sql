@@ -14,3 +14,6 @@ INSERT INTO roles (role_name) VALUES ('manager');
 INSERT INTO roles (role_name) VALUES ('operator');
 INSERT INTO user_roles (user_name, role_name) VALUES ('admin', 'manager');
 INSERT INTO user_roles (user_name, role_name) VALUES ('user', 'operator');
+INSERT INTO user_permissions (user_name, entity, permissions) VALUES ('admin', 'cars', 'crud');
+INSERT INTO user_permissions (user_name, entity, permissions) VALUES ('admin', 'manufacturers', 'crud');
+

@@ -35,4 +35,19 @@ CREATE TABLE IF NOT EXISTS user_roles(
   user_name VARCHAR(20) NOT NULL,
   role_name VARCHAR(20) NOT NULL,
   PRIMARY KEY (user_name, role_name)
-)
+);
+
+CREATE TABLE IF NOT EXISTS user_permissions (
+  user_name VARCHAR(20) NOT NULL,
+  entity VARCHAR(40) NOT NULL,
+  permissions VARCHAR(4) NOT NULL,
+  PRIMARY KEY (user_name, entity)
+);
+
+CREATE TABLE IF NOT EXISTS audit_log (
+  ts TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  entity VARCHAR(40) NOT NULL,
+  user_name VARCHAR(20) NOT NULL,
+  operation VARCHAR(1) NOT NULL
+);
+
