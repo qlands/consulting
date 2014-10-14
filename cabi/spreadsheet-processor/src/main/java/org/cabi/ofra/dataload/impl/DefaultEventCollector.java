@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * (c) 2014, Eduardo Quirós-Campos
@@ -29,17 +30,23 @@ public class DefaultEventCollector implements IEventCollector {
   }
 
   @Override
-  public boolean removeEvent(String id) {
-    return false;
+  public Event removeEvent(String id) {
+    Event e = eventMap.get(id);
+    if (e != null) {
+      events.remove(e);
+      eventMap.remove(id);
+      return e;
+    }
+    return null;
   }
 
   @Override
   public List<Event> getEvents() {
-    return null;
+    return events;
   }
 
   @Override
   public List<Event> getEvents(IEventFilter filter) {
-    return null;
+    return events.stream().filter(e -> filter.filter(e)).collect(Collectors.toList());
   }
 }

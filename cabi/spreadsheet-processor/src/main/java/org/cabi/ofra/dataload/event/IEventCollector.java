@@ -7,7 +7,7 @@ import java.util.List;
  */
 public interface IEventCollector {
   public void addEvent(Event event);
-  public boolean removeEvent(String id);
+  public Event removeEvent(String id);
   public List<Event> getEvents();
   public List<Event> getEvents(IEventFilter filter);
 }

@@ -64,4 +64,9 @@ public class Event {
   public Date getTimestamp() {
     return timestamp;
   }
+
+  @Override
+  public int hashCode() {
+    return id.hashCode();
+  }
 }
