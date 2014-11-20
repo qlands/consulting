@@ -11,6 +11,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<!-- Added this so I dont get the error lambda expressions are not supported in -source 1.5 
+	From: http://stackoverflow.com/questions/25888023/how-to-change-java-version-for-maven-in-intellij
+	-->
+	<maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
